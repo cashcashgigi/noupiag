@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noupia Bot - FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #000;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .faq-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .faq-question {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #333;
+        }
+
+        .faq-answer {
+            display: none;
+            background-color: #f0f0f0;
+            color: #000;
+            padding: 15px;
+            margin-top: 10px;
+            border-left: 3px solid #000;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>FAQ - Noupia Bot</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question">C'est quoi Noupia Bot ?</div>
+            <div class="faq-answer">Noupia Bot est une plateforme innovante qui vous permet de gagner de l'argent en ligne de manière simple et efficace.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment gagner ?</div>
+            <div class="faq-answer">Pour gagner avec Noupia Bot, suivez les instructions sur la plateforme et participez aux activités proposées. Les gains sont faciles à réaliser depuis le confort de votre lit.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment effectuer un retrait ?</div>
+            <div class="faq-answer">Pour effectuer un retrait, accédez à la section "Retrait" de votre compte, choisissez votre méthode de paiement (mobile ou crypto-monnaie), et suivez les étapes indiquées.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">La fiabilité</div>
+            <div class="faq-answer">Noupia Bot est une plateforme fiable et sécurisée, avec de nombreux utilisateurs satisfaits. Nous mettons tout en œuvre pour garantir la sécurité de vos transactions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Notre mission</div>
+            <div class="faq-answer">Notre mission est de vous permettre de gagner de l'argent depuis le confort de votre lit, de manière simple, rapide et sécurisée. Nous acceptons les paiements mobiles et les crypto-monnaies.</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
